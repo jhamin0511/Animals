@@ -3,15 +3,13 @@ plugins {
     alias(libs.plugins.android.application) apply (false)
     alias(libs.plugins.android.library) apply (false)
     alias(libs.plugins.kotlin) apply (false)
-    alias(libs.plugins.ktlint) apply (false)
+    alias(libs.plugins.ktlint)
+    alias(libs.plugins.detekt)
 }
 
 subprojects {
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
-
-    repositories {
-        mavenCentral()
-    }
+    apply(plugin = "io.gitlab.arturbosch.detekt")
 }
 
 tasks {
