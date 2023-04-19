@@ -10,6 +10,7 @@ junit4 = "4.13.2"
 androidApplication = "7.4.0"
 androidLibrary = "7.4.0"
 kotlin = "1.7.21"
+ktlint = "11.0.0"
 
 [libraries]
 androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
@@ -24,3 +25,4 @@ junit = { module = "junit:junit", version.ref = "junit4" }
 android-application = { id = "com.android.application", version.ref = "androidApplication" }
 android-library = { id = "com.android.library", version.ref = "androidLibrary" }
 kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ktlint = { id = "org.jlleitschuh.gradle.ktlint", version.ref = "ktlint" }

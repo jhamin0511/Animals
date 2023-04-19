@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin)
+    alias(libs.plugins.ktlint)
 }
 
 android {
@@ -27,9 +28,7 @@ android {
         getByName("debug") {
             isDebuggable = true
         }
-        register("benchmark") {
-
-        }
+        register("benchmark") {}
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
